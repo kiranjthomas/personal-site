@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: linear-gradient(rgba(46, 49, 49, .60), rgba(46, 49, 49, .60)), url("./img/ATX.jpeg") no-repeat center center;
+  background-size: cover;
 }
 
 .App-link {
