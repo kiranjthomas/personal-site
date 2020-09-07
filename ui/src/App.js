@@ -67,7 +67,7 @@ function App() {
             <StyledH5>HI THERE</StyledH5>
             <StyledH1>I'm Kiran Thomas</StyledH1>
             <StyledDiv>I am a Software Engineer in Austin, TX.</StyledDiv>
-            <StyledDiv>I built this website with Digital Ocean, Caddy, React and Material UI.</StyledDiv>
+            <StyledDiv>I built this website with Digital Ocean, Docker, Caddy, React and Material UI.</StyledDiv>
             <StyledDiv>At work, I build internal and external services in AWS.</StyledDiv>
             {/* <div>This website is powered by:</div> */}
             {/* <Grid container spacing={2}>
