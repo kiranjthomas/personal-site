@@ -1,9 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Container, Grid, Paper } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import styled from "styled-components";
-import backgroundImg from "./img/ATX.jpeg";
 
 const StyledH5 = styled.h5`
   color: #1abc9c;
@@ -30,9 +28,10 @@ const StyledH1 = styled.h1`
   text-size-adjust: 100%;
 `;
 
-const FlexBox = styled.div`
+const SocialDiv = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 `;
 
 const SocialLinks = styled.a`
@@ -41,27 +40,23 @@ const SocialLinks = styled.a`
   color: rgb(255, 255, 255);
 `;
 
-const StyledSection = styled.section`
-  // background-image: url(${backgroundImg});
-`;
-
-const websiteStack = {
-  digitalOcean: {
-    img: "link",
-  },
-  caddy: {
-    img: "link",
-  },
-  react: {
-    img: "link",
-  },
-  materialUI: {
-    img: "link",
-  },
-};
+// const websiteStack = {
+//   digitalOcean: {
+//     img: "link",
+//   },
+//   caddy: {
+//     img: "link",
+//   },
+//   react: {
+//     img: "link",
+//   },
+//   materialUI: {
+//     img: "link",
+//   },
+// };
 
 const StyledDiv = styled.div`
-  padding: 32px;
+  margin: 16px 0 0;
 `;
 
 function App() {
@@ -71,7 +66,9 @@ function App() {
           <Container maxWidth="lg">
             <StyledH5>HI THERE</StyledH5>
             <StyledH1>I'm Kiran Thomas</StyledH1>
-            <StyledDiv>I am a Software Engineer in Austin, TX. This website is powered by Digital Ocean, Caddy, React and Material UI. At work, I build internal and external services in AWS.</StyledDiv>
+            <StyledDiv>I am a Software Engineer in Austin, TX.</StyledDiv>
+            <StyledDiv>I built this website with Digital Ocean, Caddy, React and Material UI.</StyledDiv>
+            <StyledDiv>At work, I build internal and external services in AWS.</StyledDiv>
             {/* <div>This website is powered by:</div> */}
             {/* <Grid container spacing={2}>
             {websiteStack.forEach((value) => {
@@ -79,7 +76,7 @@ function App() {
             })}
           </Grid> */}
             {/* <div>At HEB, I build internal and external services in AWS</div> */}
-            <FlexBox>
+            <SocialDiv>
               <SocialLinks
                 href="https://www.linkedin.com/in/kiranjthomas/"
                 target="_blank"
@@ -101,7 +98,7 @@ function App() {
               <SocialLinks href="mailto:kiranjthomas@gmail.com" target="_blank">
                 <i className="fa fa-envelope fa-3x"></i>
               </SocialLinks>
-            </FlexBox>
+            </SocialDiv>
           </Container>
       </header>
     </div>
