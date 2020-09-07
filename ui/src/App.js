@@ -81,19 +81,19 @@ function App() {
             {/* <div>At HEB, I build internal and external services in AWS</div> */}
             <FlexBox>
               <SocialLinks
-                href="https://ca.linkedin.com/in/ipiyale"
+                href="https://www.linkedin.com/in/kiranjthomas/"
                 target="_blank"
               >
                 <i className="fa fa-linkedin fa-3x"></i>
               </SocialLinks>
               <SocialLinks
-                href="http://www.github.com/letmeupgradeya"
+                href="https://www.github.com/kiranjthomas"
                 target="_blank"
               >
                 <i className="fa fa-github fa-3x"></i>
               </SocialLinks>
               <SocialLinks
-                href="http://www.twitter.com/kiranscrtweets"
+                href="https://www.twitter.com/kiranscrtweets"
                 target="_blank"
               >
                 <i className="fa fa-twitter fa-3x"></i>
