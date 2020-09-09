@@ -63,43 +63,48 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Container maxWidth="lg">
-            <StyledH5>HI THERE</StyledH5>
-            <StyledH1>I'm Kiran Thomas</StyledH1>
-            <StyledDiv>I am a Software Engineer in Austin, TX.</StyledDiv>
-            <StyledDiv>I built this website with Digital Ocean, Docker, Caddy, React and Material UI.</StyledDiv>
-            <StyledDiv>At work, I build internal and external services in AWS.</StyledDiv>
-            {/* <div>This website is powered by:</div> */}
-            {/* <Grid container spacing={2}>
+        <Container maxWidth="lg">
+          <StyledH5>HI THERE</StyledH5>
+          <StyledH1>I'm Kiran Thomas</StyledH1>
+          <StyledDiv>I am a Software Engineer in Austin, TX.</StyledDiv>
+          <StyledDiv>
+            I built this website with Digital Ocean, Docker, Caddy, React and
+            Material UI.
+          </StyledDiv>
+          <StyledDiv>
+            At work, I build internal and external services in AWS.
+          </StyledDiv>
+          {/* <div>This website is powered by:</div> */}
+          {/* <Grid container spacing={2}>
             {websiteStack.forEach((value) => {
                 console.log(value)
             })}
           </Grid> */}
-            {/* <div>At HEB, I build internal and external services in AWS</div> */}
-            <SocialDiv>
-              <SocialLinks
-                href="https://www.linkedin.com/in/kiranjthomas/"
-                target="_blank"
-              >
-                <i className="fa fa-linkedin fa-3x"></i>
-              </SocialLinks>
-              <SocialLinks
-                href="https://www.github.com/kiranjthomas"
-                target="_blank"
-              >
-                <i className="fa fa-github fa-3x"></i>
-              </SocialLinks>
-              <SocialLinks
-                href="https://www.twitter.com/kiranscrtweets"
-                target="_blank"
-              >
-                <i className="fa fa-twitter fa-3x"></i>
-              </SocialLinks>
-              <SocialLinks href="mailto:kiranjthomas@gmail.com" target="_blank">
-                <i className="fa fa-envelope fa-3x"></i>
-              </SocialLinks>
-            </SocialDiv>
-          </Container>
+          {/* <div>At HEB, I build internal and external services in AWS</div> */}
+          <SocialDiv>
+            <SocialLinks
+              href="https://www.linkedin.com/in/kiranjthomas/"
+              target="_blank"
+            >
+              <i className="fa fa-linkedin fa-3x"></i>
+            </SocialLinks>
+            <SocialLinks
+              href="https://www.github.com/kiranjthomas"
+              target="_blank"
+            >
+              <i className="fa fa-github fa-3x"></i>
+            </SocialLinks>
+            <SocialLinks
+              href="https://www.twitter.com/kiranscrtweets"
+              target="_blank"
+            >
+              <i className="fa fa-twitter fa-3x"></i>
+            </SocialLinks>
+            <SocialLinks href="mailto:kiranjthomas@gmail.com" target="_blank">
+              <i className="fa fa-envelope fa-3x"></i>
+            </SocialLinks>
+          </SocialDiv>
+        </Container>
       </header>
     </div>
   );
