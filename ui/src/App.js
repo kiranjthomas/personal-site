@@ -68,7 +68,7 @@ function App() {
           <StyledH1>I'm Kiran Thomas</StyledH1>
           <StyledDiv>I am a Software Engineer in Austin, TX.</StyledDiv>
           <StyledDiv>
-            I built this website with Digital Ocean, Docker, Caddy, React and
+            I built this website with Digital Ocean, Docker, Caddy, React, and
             Material UI.
           </StyledDiv>
           <StyledDiv>
