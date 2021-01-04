@@ -66,9 +66,9 @@ function App() {
         <Container maxWidth="lg">
           <StyledH5>HI THERE</StyledH5>
           <StyledH1>I'm Kiran Thomas</StyledH1>
-          <StyledDiv>I am a Software Engineer in Austin, TX.</StyledDiv>
+          <StyledDiv>I'm a Software Engineer in Austin, TX.</StyledDiv>
           <StyledDiv>
-            I built this site using with Terraform, Docker, Caddy, React, and
+            I built this site with Terraform, Docker, Caddy, React, and
             Material UI.
           </StyledDiv>
           <StyledDiv>
