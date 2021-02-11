@@ -68,12 +68,13 @@ function App() {
           <StyledH1>I'm Kiran Thomas</StyledH1>
           <StyledDiv>I'm a Software Engineer in Austin, TX.</StyledDiv>
           <StyledDiv>
-            I built this site with Terraform, Docker, Caddy, React, and
-            Material UI.
+            I built this site with Terraform, Docker, Caddy, React, and Material
+            UI.
           </StyledDiv>
           <StyledDiv>
             At work, I build internal and external services in AWS.
           </StyledDiv>
+          <StyledDiv>I am an AWS Certified Solutions Architect.</StyledDiv>
           {/* <div>This website is powered by:</div> */}
           {/* <Grid container spacing={2}>
             {websiteStack.forEach((value) => {
