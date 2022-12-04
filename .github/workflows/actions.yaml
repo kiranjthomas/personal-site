@@ -3,7 +3,7 @@ name: SCP hugo static assets
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
