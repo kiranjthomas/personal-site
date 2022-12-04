@@ -6,11 +6,12 @@ theme = 'anatole'
 [params]
     title = "I'm Kiran Thomas"
     author = "Kiran Thomas"
+    profilePicture = "images/profile.jpeg"
+    displayMode = "dark"
     description = """
     I'm a Software Engineer in Austin, TX.
     I am an AWS Certified Solutions Architect.
     """
-    profilePicture = "images/profile.jpeg"
 
     [[params.socialIcons]]
     icon = "fab fa-linkedin"
@@ -32,7 +33,7 @@ theme = 'anatole'
     name = "Posts"
     weight = 200
     identifier = "posts"
-    url = "/post/"
+    url = "/posts/"
 
     [[menu.main]]
     name = "About"
