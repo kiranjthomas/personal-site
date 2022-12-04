@@ -1,6 +1,6 @@
 ---
 title: "How Do Private DNS Names Get Resolved Within an AWS VPC"
-date: 2022-08-31T14:33:41-06:00
+date: 2022-08-31T00:00:00-06:00
 draft: false
 ---
 

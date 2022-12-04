@@ -6,6 +6,8 @@ description = """
 Hi There!
 """
 
+mainSections = []
+
 [[socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
