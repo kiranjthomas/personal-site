@@ -1,0 +1,4 @@
+baseURL = 'https://kiranjthomas.com/'
+languageCode = 'en-us'
+title = 'Kiran Thomas'
+theme = 'anatole'

@@ -1,0 +1,22 @@
+title = "I'm Kiran Thomas"
+author = "Kiran Thomas"
+profilePicture = "images/profile.jpeg"
+displayMode = "dark"
+description = """
+Hi There!
+"""
+
+[[socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/kiranjthomas/"
+
+[[socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/kiranjthomas"
+
+[[socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:kiranjthomas@gmail.com"
