@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./ui
+        working-directory: ./hugo
 
     steps:
       - name: Pull from GitHub
@@ -23,7 +23,7 @@ jobs:
         with:
           hugo-version: 'latest'
       - name: Build
-        run: cd hugo && hugo --minify                    
+        run: hugo --minify
       - name: SCP static files
         uses: appleboy/scp-action@master
         with:
