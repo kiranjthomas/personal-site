@@ -1,10 +1,10 @@
 ---
 title: "How Do Private DNS Names Get Resolved Within an AWS VPC"
-date: 2022-08-31T00:00:00-06:00
+date: 2022-08-31T01:00:00-06:00
 draft: false
 ---
 
-If I have a EC2 instance foo  on a public subnet and another EC2 instance bar on a private subnet with a private DNS name, how would foo  be able to find bar ?
+If I have a EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo  be able to find bar ?
 
 # Please Meet the Route 53 DNS Resolver
 

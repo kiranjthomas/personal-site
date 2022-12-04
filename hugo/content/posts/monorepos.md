@@ -1,13 +1,9 @@
 ---
-title: "Monorepos"
+title: "What is a Monorepo?"
 date: 2022-12-04T16:18:59-06:00
 draft: false
 ---
 
-# Source
-https://www.youtube.com/watch?v=9iU_IE6vnJ8
-
-# What is a Monorepo?
 A single monolithic repository to house all the software that a squad or department or organization (e.g. Google) owns.
 
 # Why use Monorepo?
@@ -73,3 +69,6 @@ Smart build systems like NX and Turborepo do cool things like
 
 ## Bazel
 Built by Google for their monorepo
+
+# Source
+https://www.youtube.com/watch?v=9iU_IE6vnJ8

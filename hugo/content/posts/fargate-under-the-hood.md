@@ -1,10 +1,10 @@
 ---
 title: "Fargate Under the Hood"
-date: 2022-08-23T00:00:00-06:00
+date: 2022-08-23T01:00:00-06:00
 draft: false
 ---
 
-I've used AWS Fargate a bunch before but it does a great job of abstracting lots of things away.
+I've used AWS Fargate many times before. It does a great job of abstracting lots of things away.
 
 To better understand these abstractions, I read AWS blog posts and documentation and watched Fargate deep dives from past re:invents.
 
