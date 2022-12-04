@@ -6,6 +6,6 @@ draft: false
 
 I'm a Software Engineer in Austin, TX.
 
-I'm intereted in building performant and secure services in AWS.
+I'm interested in building performant and secure services in AWS.
 
 I am an AWS Certified Solutions Architect.
