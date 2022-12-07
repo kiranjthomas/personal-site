@@ -6,21 +6,21 @@ draft: false
 
 If I have a EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo  be able to find bar ?
 
-# Please Meet the Route 53 DNS Resolver
+## Please Meet the Route 53 DNS Resolver
 
 The Route 53 DNS Resolver resolves DNS requests from private and public Route53 Hosted Zones and forwards other requests to public DNS. It is only accessible from within the VPC.
 
 In a AWS VPC, there will always be a Route 53 DNS Resolver server which runs at the VPC address + 2. For example, the DNS Server on a `10.0.0.0/16`  network is located at `10.0.0.2`.
 
-For more info, check out https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+For more info, check out <https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html>
 
-# How Can I Find the Address of the Resolver?
+## How Can I Find the Address of the Resolver?
 
 One way would be to exec-ing into a Fargate container and run cat /etc/resolv.conf. See below
 
 ![dns resolver](/images/dns-resolver-ecs-exec.png)
 
-# How Does a Compute Resource Know to Send DNS Queries to the DNS Server?
+## How Does a Compute Resource Know to Send DNS Queries to the DNS Server?
 
 This gets set via Dynamic Host Configuration Protocol (DHCP). The DHCP Option sets are assigned at the VPC level.
 
@@ -28,7 +28,7 @@ When you create a new VPC, a default DHCP option set is created for you. This DH
 
 Here's an example of a DHCP Options Set
 
-```
+```dns
 Domain-name=ap.south-1.compute.internal;
 name-servers=AmazonProvidedDNS
 ```
@@ -39,10 +39,10 @@ name-servers which decides who will resolve the DNS queries for this VPC. Amaz
 
 You can configure/review the DHCP Option Sets in the AWS console
 
-# Use These Tools For Debugging DNS Issues
+## Use These Tools For Debugging DNS Issues
 
 * cat /etc/resolv.conf  - show your resolver
-* ifconfig -a - display information of all active or inactive netrwork interfaces on the server
+* ifconfig -a - display information of all active or inactive network interfaces on the server
 * dig - Utility for interrogating DNS name servers
   * dig <hostname>
   * dig -x - simplified reverse lookup
