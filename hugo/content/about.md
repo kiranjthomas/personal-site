@@ -6,6 +6,6 @@ draft: false
 
 I'm a Software Engineer in Austin, TX.
 
-I'm interested in building performant and secure services in AWS.
+I'm interested in building performant and secure services using the latest and greatest from AWS.
 
-I am an AWS Certified Solutions Architect.
+I am an [AWS Certified Solutions Architect](https://www.credly.com/badges/c100be43-60fd-4d4a-b3b2-a9d6847ce6c4).
