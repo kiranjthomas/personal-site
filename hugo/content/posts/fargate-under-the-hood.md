@@ -16,7 +16,7 @@ The post below summarizes my findings.
 
 > AWS Fargate is a technology that you can use with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances
 
-source: <https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html>
+[source](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html)
 
 Before Fargate, you would have to manage your own EC2 instances with AWS Elastic Container Service (ECS) to run containers.
 
@@ -26,11 +26,11 @@ If you are new to ECS, just think of it like a container orchestrator like Kuber
 
 > With AWS Fargate, you no longer have to provision, configure, or scale clusters of virtual machines to run containers. This removes the need to choose server types, decide when to scale your clusters, or optimize cluster packing.
 
-source: <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html>
+[source](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 > Since Fargate takes on the undifferentiated heavy lifting of infrastructure setup and maintenance for running containers, it is also responsible for maintaining the lifecycle of these containers. This includes bootstrapping container images, capturing and streaming container logs to appropriate destinations and making available the appropriate interfaces for storage, networking, IAM role credentials and metadata retrieval for these container
 
-source: <https://aws.amazon.com/blogs/containers/under-the-hood-fargate-data-plane/>
+[source](https://aws.amazon.com/blogs/containers/under-the-hood-fargate-data-plane/)
 
 To me, that's a long way of saying serverless is easy. Devs get to focus on a product's business logic and let AWS take care of the non-business logic related things.
 
@@ -62,7 +62,7 @@ sends task definition (i.e. launch instructions)
 issues instructions to run
 5. Bring up the containers
 6. Data Plane reports back to the Control Plane saying the containers are running
-source: <https://www.youtube.com/watch?v=Hr-zOaBGyEA>
+[source](https://www.youtube.com/watch?v=Hr-zOaBGyEA)
 
 ## The Control Plane is Boring (to me)
 
@@ -78,7 +78,7 @@ The Control Plane does important things but I didn't find it all that exciting
 
 Did you know that AWS Fargate keeps a pool of pre-warmed EC2 instances ready to go? This cuts down on how long it takes to create and run a task.
 
-source: <https://aws.amazon.com/blogs/containers/under-the-hood-amazon-elastic-container-service-and-aws-fargate-increase-task-launch-rates/>
+[source](https://aws.amazon.com/blogs/containers/under-the-hood-amazon-elastic-container-service-and-aws-fargate-increase-task-launch-rates/)
 
 ## Deep Dive into the Data Plane
 
@@ -114,7 +114,7 @@ AWS doesn't trust cgroups, namespaces and secomp policies when it comes to multi
 
 Additionally, when your task completes or dies, the EC2 instance is terminated. AWS claims that whenever you invoke the RunTask API, your task will be running on a new pre-warmed EC2 instance.
 
-source: <https://www.youtube.com/watch?v=Hr-zOaBGyEA>
+[source](https://www.youtube.com/watch?v=Hr-zOaBGyEA)
 
 #### Task Isolation
 
@@ -136,7 +136,7 @@ To mitigate against the Fargate ENI doing bad things with the Control Plane, the
 
 Did you know that security groups are associated with network interfaces? I thought they were associated with the actual instance.
 
-source: <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html>
+[source](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
 
 ## Other Fun Facts
 
@@ -146,7 +146,7 @@ The following tidbits are true as of platform version 1.4.0
 
 AWS replaced Docker Enginer with ContainerD as the execution engine.
 
-source: <https://aws.amazon.com/blogs/containers/aws-fargate-launches-platform-version-1-4/>
+[source](https://aws.amazon.com/blogs/containers/aws-fargate-launches-platform-version-1-4/)
 
 ### Fargate tasks now have a consolidated 20GB ephemeral volume
 
@@ -154,4 +154,4 @@ Tasks used to have two ephemeral local volumes. One for a staging area for conta
 
 Now there's just one volume so that tasks can use this space however they want.
 
-source: <https://aws.amazon.com/blogs/containers/aws-fargate-launches-platform-version-1-4/>
+[source](https://aws.amazon.com/blogs/containers/aws-fargate-launches-platform-version-1-4/)

@@ -12,7 +12,7 @@ The Route 53 DNS Resolver resolves DNS requests from private and public Route53
 
 In a AWS VPC, there will always be a Route 53 DNS Resolver server which runs at the VPC address + 2. For example, the DNS Server on a `10.0.0.0/16`  network is located at `10.0.0.2`.
 
-For more info, check out <https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html>
+For more info, check out the [Route 53 Developer Guide](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html).
 
 ## How Can I Find the Address of the Resolver?
 
