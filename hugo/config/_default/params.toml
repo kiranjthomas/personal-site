@@ -1,9 +1,9 @@
-title = "I'm Kiran Thomas"
+title = "Hi There!"
 author = "Kiran Thomas"
 profilePicture = "images/profile.jpeg"
 displayMode = "dark"
 description = """
-Hi There!
+My name is Kiran Thomas.
 """
 
 mainSections = []
