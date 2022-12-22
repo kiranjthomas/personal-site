@@ -3,7 +3,7 @@ author = "Kiran Thomas"
 profilePicture = "images/profile.jpeg"
 displayMode = "dark"
 description = """
-My name is Kiran Thomas.
+My name is Kiran Thomas
 """
 
 mainSections = []
