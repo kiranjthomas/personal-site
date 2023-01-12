@@ -34,3 +34,4 @@ jobs:
           source: "hugo/public/*"
           target: "/home/kiran/kiranjthomas/edge/build/www/personal"
           strip_components: 2
+          rm: true

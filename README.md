@@ -18,6 +18,16 @@ For more information, visit the Hugo [commands] documentation
 
 `cd hugo && hugo new posts/<new-post>.md`
 
+When you are ready to publish the post, remember to update the draft status
+
+```md
+---
+title: "What is the Difference Between a Process and a Thread"
+date: 2023-01-12T10:56:57-06:00
+draft: false <----update this to true
+---
+```
+
 ## Deployment
 
 Commits to main trigger a [Github Actions] workflow that
