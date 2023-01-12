@@ -4,7 +4,7 @@ date: 2023-01-12T10:56:57-06:00
 draft: false
 ---
 
-[ByteByteGo] is an incredible resource for understanding system design and architecture. They recently published a [video](https://www.youtube.com/watch?v=4rLW7zg21gI) on the difference between a Process and a Thread. Here are my notes from that video!
+[ByteByteGo] is an incredible resource for understanding system design and architecture. They recently published a [video](https://www.youtube.com/watch?v=4rLW7zg21gI) discussing the difference between a Process and a Thread. Here are my notes from that video!
 
 ## What is a Process?
 
