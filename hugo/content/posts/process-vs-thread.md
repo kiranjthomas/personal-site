@@ -42,11 +42,10 @@ The operating system will store the state of the current running process so that
 
 Context switching is expensive because it involves
 
- saving saving and loading registers
-switching out memory pages
-updating kernal structures
-It's generally faster to switch contexts between threads than between processes. There are fewer states to track. Additionally, since threads share memory, there is no need to switch out virtual memory pages.
+* saving saving and loading registers
+* switching out memory pages
+* updating kernel structures
 
-source: bytebytego
+It's generally faster to switch contexts between threads than between processes. There are fewer states to track. Additionally, since threads share memory, there is no need to switch out virtual memory pages.
 
 [ByteByteGo]:https://bytebytego.com/
