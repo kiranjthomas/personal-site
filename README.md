@@ -1,18 +1,23 @@
 # personal-site
 
 ## Hugo
+
 This site is built using [Hugo].
 
 ### Theme
+
 The Hugo [theme] that is used for the site is anatole.
 
 ### Run locally
+
 `hugo server --buildDrafts`
 
 For more information, visit the Hugo [commands] documentation
 
 ## Deployment
+
 Commits to main trigger a [Github Actions] workflow that
+
 * `hugo --minify`
 * SCP static assets to workload in the cloud
 
