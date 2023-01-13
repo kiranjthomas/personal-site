@@ -4,7 +4,7 @@ date: 2022-08-31T01:00:00-06:00
 draft: false
 ---
 
-If I have a EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo  be able to find bar ?
+If I have an EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo be able to find bar ?
 
 ## Please Meet the Route 53 DNS Resolver
 
@@ -16,7 +16,7 @@ For more info, check out the [Route 53 Developer Guide](https://docs.aws.amazon
 
 ## How Can I Find the Address of the Resolver?
 
-One way would be to exec-ing into a Fargate container and run cat /etc/resolv.conf. See below
+One way would be to [exec](https://aws.amazon.com/blogs/containers/new-using-amazon-ecs-exec-access-your-containers-fargate-ec2/) into a Fargate container and run cat /etc/resolv.conf. See below
 
 ![dns resolver](/images/dns-resolver-ecs-exec.png)
 
@@ -38,6 +38,14 @@ name-servers=AmazonProvidedDNS
 `name-servers` determines the "DNS servers that your network interfaces will use for domain name resolution."  `AmazonProvidedDNS`resolves to the +2 address mentioned above.
 
 See the AWS VPC [documentation](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSetConcepts.html#ArchitectureDiagram) for more on DHCP options.
+
+## How about that Foo and Bar Example
+
+So I believe when `foo` wants to connect with `bar`, `foo` will 
+
+1. interact with the DHCP server to get the address of the DNS server
+1. get the IP address of `bar` from the DNS server
+1. connect to `bar` through the VPC's route tables
 
 ## What Tools are Available For Debugging DNS Issues?
 
