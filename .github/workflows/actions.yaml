@@ -30,4 +30,4 @@ jobs:
           key: ${{ secrets.KEY }}
           source: "public/*"
           target: "/home/kiran/kiranjthomas/edge/build/www/personal"
-          strip_components: 2
+          strip_components: 1
