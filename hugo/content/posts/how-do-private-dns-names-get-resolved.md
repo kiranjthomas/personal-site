@@ -33,13 +33,13 @@ Domain-name=ap.south-1.compute.internal;
 name-servers=AmazonProvidedDNS
 ```
 
-The Domain-name  sets the default domain name.
+`Domain-name` specifies the "domain name that a client should use when resolving hostnames via the Domain Name System."
 
-name-servers which decides who will resolve the DNS queries for this VPC. AmazonProvidedDNS  resolves to the +2 address mentioned above.
+`name-servers` determines the "DNS servers that your network interfaces will use for domain name resolution." `AmazonProvidedDNS`resolves to the +2 address mentioned above.
 
-You can configure/review the DHCP Option Sets in the AWS console
+See the VPC [documentation](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSetConcepts.html#ArchitectureDiagram) for more on DHCP options.
 
-## Use These Tools For Debugging DNS Issues
+## What Tools are Available For Debugging DNS Issues?
 
 * cat /etc/resolv.conf  - show your resolver
 * ifconfig -a - display information of all active or inactive network interfaces on the server
