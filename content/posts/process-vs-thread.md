@@ -8,7 +8,7 @@ draft: false
 
 ## What is a Process?
 
-When a program is loaded into memory and executed by the processor, a process is created.
+A process is created when a program is loaded into memory and executed by the processor.
 
 ![What is a Process](/images/process.png)
 
