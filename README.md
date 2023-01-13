@@ -10,13 +10,13 @@ The Hugo [theme] that is used for the site is anatole.
 
 ### Run locally
 
-`cd hugo && hugo server --buildDrafts`
+`hugo server --buildDrafts`
 
 For more information, visit the Hugo [commands] documentation
 
 ### Add New Post
 
-`cd hugo && hugo new posts/<new-post>.md`
+`hugo new posts/<new-post>.md`
 
 When you are ready to publish the post, remember to update the draft status
 

@@ -1,4 +1,4 @@
-name: SCP hugo static assets
+name: Build and Deploy Static Assets
 
 on:
   push:
@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./hugo
 
     steps:
       - name: Pull from GitHub
@@ -23,7 +20,7 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      - name: Build
+      - name: Build Hugo
         run: hugo --minify
       - name: SCP static files
         uses: appleboy/scp-action@master
@@ -31,6 +28,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          source: "hugo/public/*"
+          source: "public/*"
           target: "/home/kiran/kiranjthomas/edge/build/www/personal"
           strip_components: 2
