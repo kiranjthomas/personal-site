@@ -15,7 +15,7 @@ A single monolithic repository to house all the software that a squad or departm
 
 ### Consistency
 
-Share modules like eslint config, documentation, UI library etc
+Share modules like eslint config, documentation, UI library etc.
 
 ### Dependency Management
 
