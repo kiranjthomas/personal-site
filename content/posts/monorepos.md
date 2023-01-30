@@ -4,7 +4,7 @@ date: 2022-12-04T16:18:59-06:00
 draft: false
 ---
 
-A single monolithic repository to house all the software that a squad or department or organization (e.g. Google) owns.
+A monorepo is a single monolithic repository to house all the software that a squad or department or organization (e.g. Google) owns. Here are my notes from watching this [Fireship IO YouTube video](https://www.youtube.com/watch?v=9iU_IE6vnJ8).
 
 {{< toc >}}
 
@@ -86,7 +86,3 @@ Smart build systems like NX and Turborepo do cool things like
 #### Bazel
 
 Built by Google for their monorepo
-
-## Source
-
-<https://www.youtube.com/watch?v=9iU_IE6vnJ8>
