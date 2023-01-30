@@ -5,4 +5,6 @@ draft: false
 
 # What Will You Find On My Site?
 
-This site contains the notes I take for when I want to figure out how some technical concept or tool works.
+I like to take notes when I try to understand a technical concept or tool.
+
+I'm sharing my notes in a blog format in case they are useful to someone else. 🙂
