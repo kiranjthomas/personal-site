@@ -1,7 +1,7 @@
 ---
 title: "Mastering Chaos a Netflix Guide to Microservices"
 date: 2023-01-29T18:29:34-06:00
-draft: true
+draft: false
 ---
 
 Here are my notes from [watching a former Netflix director of engineering discuss Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM).
