@@ -22,7 +22,7 @@ Here are my notes from [watching a former Netflix director of engineering discus
 
 Martin Fowler
 
-### Microservice architectures are complex and organic.
+### Microservice architectures are complex and organic
 
 * Health depends on discipline and chaos.
 * The Microservice definition has evolved over time
@@ -109,7 +109,7 @@ Partition Tolerance - The system continues to operate despite an arbitrary numbe
 ###### Eventual Consistency
 
 > After a call to an S3 API function such as PUT that stores or modifies data, there’s a small time window where the data has been accepted and durably stored, but not yet visible to all GET or List requests
-https://aws.amazon.com/blogs/aws/amazon-s3-update-strong-read-after-write-consistency/
+<https://aws.amazon.com/blogs/aws/amazon-s3-update-strong-read-after-write-consistency/>
 
 ###### Local Quorum
 
@@ -143,7 +143,7 @@ You need to be able to replicate a service. Netflix uses AWS auto-scaling groups
 ##### Chaos Monkey
 
 Surviving Instance Failure
-https://netflix.github.io/chaosmonkey/
+<https://netflix.github.io/chaosmonkey/>
 
 #### Stateful Services
 
@@ -169,7 +169,7 @@ Netflix uses EVCache with almost every service that needs a cache.
 
 Combination of stateful and stateless services.
 
-For ideas on what upstream services should do if a downstream service goes down, watch https://youtu.be/CZ3wIuvmHeM?t=1881. Possible solutions could be
+For ideas on what upstream services should do if a downstream service goes down, watch <https://youtu.be/CZ3wIuvmHeM?t=1881>. Possible solutions could be
 Workload partitioning
 Request-level caching
 Secure token fallback

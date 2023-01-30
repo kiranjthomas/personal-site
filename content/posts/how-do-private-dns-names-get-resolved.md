@@ -45,7 +45,7 @@ See the AWS VPC [documentation](https://docs.aws.amazon.com/vpc/latest/userguide
 
 ## How about that Foo and Bar Example
 
-So I believe when `foo` wants to connect with `bar`, `foo` will 
+So I believe when `foo` wants to connect with `bar`, `foo` will
 
 1. interact with the DHCP server to get the address of the DNS server
 1. get the IP address of `bar` from the DNS server
@@ -56,6 +56,6 @@ So I believe when `foo` wants to connect with `bar`, `foo` will
 * cat /etc/resolv.conf  - show your resolver
 * ifconfig -a - display information of all active or inactive network interfaces on the server
 * dig - Utility for interrogating DNS name servers
-  * dig <hostname>
-  * dig -x - simplified reverse lookup
+  * `dig <hostname>`
+  * `dig -x <ip address>` - simplified reverse lookup
 * hostname  - use this to confirm that the hostname that was created matches what's in the DHCP options set
