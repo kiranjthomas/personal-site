@@ -64,6 +64,7 @@ sends task definition (i.e. launch instructions)
 issues instructions to run
 5. Bring up the containers
 6. Data Plane reports back to the Control Plane saying the containers are running
+
 [source](https://www.youtube.com/watch?v=Hr-zOaBGyEA)
 
 ## The Control Plane is Boring (to me)
@@ -94,7 +95,7 @@ From a networking perspective, the three big things that jump out to me are
 
 1. the EC2 instances that are used to run tasks are running in a separate Fargate VPC which is separate from your VPC
 2. the primary Elastic Network Interface is in the Fargate VPC and handles network traffic for the
-   * Container Runtime,
+   * Container Runtime
    * Fargate Agent
    * Guest kernel & OS
 3. the secondary Elastic Network Interface is in your VPC and handles
@@ -132,8 +133,9 @@ Well couldn't a bad actor leverage the Fargate ENI we talked about earlier? Woul
 
 To mitigate against the Fargate ENI doing bad things with the EC2 instances, AWS
 
-uses security groups to block communication between instances
-monitors VPC flow logs in the Fargate VPC for suspicious activity
+* uses security groups to block communication between instances
+* monitors VPC flow logs in the Fargate VPC for suspicious activity
+
 To mitigate against the Fargate ENI doing bad things with the Control Plane, the Fargate agent only has privileges to discover and mutate about the local task..
 
 Did you know that security groups are associated with network interfaces? I thought they were associated with the actual instance.
