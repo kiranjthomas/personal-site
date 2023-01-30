@@ -6,6 +6,8 @@ draft: false
 
 If I have an EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo be able to find bar ?
 
+{{< toc >}}
+
 ## Please Meet the Route 53 DNS Resolver
 
 The Route 53 DNS Resolver resolves DNS requests from private and public Route53 Hosted Zones and forwards other requests to public DNS. It is only accessible from within the VPC.

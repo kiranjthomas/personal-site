@@ -10,6 +10,8 @@ To better understand these abstractions, I read AWS blog posts and documentation
 
 The post below summarizes my findings.
 
+{{< toc >}}
+
 ## Let's First Level Set
 
 ### What is AWS Fargate?

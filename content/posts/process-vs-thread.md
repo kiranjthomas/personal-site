@@ -6,6 +6,8 @@ draft: false
 
 [ByteByteGo] is an incredible resource for understanding system design and architecture. They recently published a [video](https://www.youtube.com/watch?v=4rLW7zg21gI) discussing the difference between a Process and a Thread. Here are my notes from that video!
 
+{{< toc >}}
+
 ## What is a Process?
 
 A process is created when a program is loaded into memory and executed by the processor.

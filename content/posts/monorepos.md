@@ -6,6 +6,8 @@ draft: false
 
 A single monolithic repository to house all the software that a squad or department or organization (e.g. Google) owns.
 
+{{< toc >}}
+
 ## Why use a Monorepo?
 
 ### Visibility
