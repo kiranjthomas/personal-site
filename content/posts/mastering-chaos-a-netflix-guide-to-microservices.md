@@ -1,5 +1,5 @@
 ---
-title: "Mastering Chaos a Netflix Guide to Microservices"
+title: "Mastering Chaos - A Netflix Guide to Microservices"
 date: 2023-01-29T18:29:34-06:00
 draft: false
 ---
