@@ -21,7 +21,7 @@ jobs:
           command: config
           globs: |
             .markdownlint.json
-            content/*.md
+            content/**/*.md
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
