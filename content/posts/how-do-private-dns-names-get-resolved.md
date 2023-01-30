@@ -39,7 +39,7 @@ name-servers=AmazonProvidedDNS
 
 `name-servers` determines the "DNS servers that your network interfaces will use for domain name resolution."
 
-`AmazonProvidedDNS`resolves to the +2 address mentioned above.
+`AmazonProvidedDNS` resolves to the +2 address mentioned above.
 
 See the AWS VPC [documentation](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSetConcepts.html#ArchitectureDiagram) for more on DHCP options.
 
