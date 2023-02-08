@@ -7,4 +7,4 @@ draft: false
 
 I like to take notes when I try to understand a technical concept or tool.
 
-I'm sharing my notes in a blog format in case they are useful to someone else. 🙂
+I'm sharing my notes in [blog format](/posts/) in case they are useful to someone else. 🙂
