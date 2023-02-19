@@ -90,7 +90,7 @@ Supports
 
 > Redis can be used as a rate limiter by using its increment command on some counters and setting expiration times on those counters.
 
-A basic example would be incrementing a value for a key using the [INCR command](https://redis.io/commands/incr/). The current count would be compared to 
+A basic example would be incrementing a value for a key using the [INCR command](https://redis.io/commands/incr/). The current count would be compared to
 
 ![redis-rate-limit-accepted](/images/redis-rate-limit-accepted.png)
 
