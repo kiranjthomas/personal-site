@@ -108,6 +108,6 @@ A basic example would be incrementing a value for a key using the [INCR command]
 
 ![redis-sorted-set](/images/redis-sorted-set.png)
 
-![redis-sorted-set-2](/images/redis-sorted-set.png)
+![redis-sorted-set-2](/images/redis-sorted-set-2.png)
 
 [source](https://youtu.be/a4yX7RUgTxI?t=323)
