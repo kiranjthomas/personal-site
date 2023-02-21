@@ -6,7 +6,7 @@ draft: false
 
 I use Redis for caching. I learned about some other neat use cases after watching [ByteByteGo's Redis video](https://www.youtube.com/watch?v=a4yX7RUgTxI).
 
-I decided to document these other use cases so that I can quickly refer back to them in the future.
+I decided to document these other use cases so that I could quickly refer back to them in the future.
 
 {{< toc >}}
 
