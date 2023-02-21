@@ -4,7 +4,9 @@ date: 2023-02-19T16:44:01-06:00
 draft: false
 ---
 
-I use Redis for caching. Once I watched [ByteByteGo's Top 5 Uses of Redis video](https://www.youtube.com/watch?v=a4yX7RUgTxI), I knew I needed to create a new blog post. The video documented some other cool use cases. I would definitely forget these if I didn't take notes.
+I use Redis for caching. I learned about some other neat use cases after watching [ByteByteGo's Redis video](https://www.youtube.com/watch?v=a4yX7RUgTxI). 
+
+I decided to document these other use cases so that I can quickly refer back to them in the future.
 
 {{< toc >}}
 
