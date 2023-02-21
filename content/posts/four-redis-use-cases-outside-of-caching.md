@@ -1,5 +1,5 @@
 ---
-title: "Top 4 Uses of Redis Outside of Caching"
+title: "Four Redis Use Cases Outside of Caching"
 date: 2023-02-19T16:44:01-06:00
 draft: false
 ---
@@ -48,7 +48,7 @@ Supports
 
 [source](https://youtu.be/a4yX7RUgTxI?t=170)
 
-## Top Four Use Cases
+## Four Other Use Cases for Redis
 
 ### Session Store
 
