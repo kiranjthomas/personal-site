@@ -16,7 +16,7 @@ I installed the Github CLI via homebrew.
 
 Once installed, you can use the CLI by entering gh in your shell.
 
-## Commands
+## Helpful Commands
 
 I use aliases in my `.zshrc` file to quickly run specific `gh` commands.
 
@@ -41,3 +41,7 @@ Some commands open the relevant information that I want in a browser. If you wan
 ### View Pull Request Checks
 
 `gh pr checks`
+
+## Full List of Commands
+
+See <https://cli.github.com/manual/gh>
