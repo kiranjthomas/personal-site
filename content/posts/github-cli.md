@@ -18,9 +18,13 @@ Once installed, you can use the CLI by entering gh in your shell.
 
 ## Commands
 
-I use aliases in my `.zshrc` file to quickly run specific `gh` commands. These commands open the relevant information that I want in a browser.
+I use aliases in my `.zshrc` file to quickly run specific `gh` commands.
 
-If you want to see this information in your terminal, remove the `--web` CLI param.
+Some commands open the relevant information that I want in a browser. If you want to see this information in your terminal, remove the --web CLI param.
+
+### View Repo
+
+`gh repo view --web`
 
 ### Create Pull Request
 
@@ -30,6 +34,10 @@ If you want to see this information in your terminal, remove the `--web` CLI par
 
 `gh pr view --web`
 
-### View Repo
+### View Pull Request Status
 
-`gh repo view --web`
+`gh pr status`
+
+### View Pull Request Checks
+
+`gh pr checks`
