@@ -4,7 +4,7 @@ date: 2022-08-31T01:00:00-06:00
 draft: false
 ---
 
-If I have an EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo be able to find bar ?
+If I have an EC2 instance `foo` on a public subnet and another EC2 instance `bar` on a private subnet with a private DNS name, how would foo be able to find `bar`?
 
 {{< toc >}}
 
