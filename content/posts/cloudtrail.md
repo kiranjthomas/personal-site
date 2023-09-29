@@ -1,6 +1,6 @@
 ---
 title: "How to use AWS CloudTrail to Audit Infrastructure Changes"
-date: 2023-09-29T10:00:09-05:00
+date: 2023-08-14T10:00:09-05:00
 draft: false
 ---
 
