@@ -14,7 +14,7 @@ There are plenty of ways to get the CLI. <https://github.com/cli/cli#installatio
 
 I installed the Github CLI via homebrew.
 
-Once installed, you can use the CLI by entering gh in your shell.
+Once installed, you can use the CLI by entering `gh` in your shell.
 
 ## Helpful Commands
 
