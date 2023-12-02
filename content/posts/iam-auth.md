@@ -1,5 +1,5 @@
 ---
-title: "How does AWS IAM Authenticate Trillions of API Requests a Day?"
+title: "How does AWS Authenticate Trillions of API Requests a Day?"
 date: 2023-11-29T20:44:34-06:00
 draft: false
 ---
