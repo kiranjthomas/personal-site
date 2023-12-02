@@ -6,7 +6,7 @@ draft: false
 
 I watched an AWS re:invent 400 level Identity and Access Management (IAM) presentation from 2022 by [Eric Brandwine](https://www.linkedin.com/in/ericbrandwine). Eric is a VP and Distinguished Engineer with the Amazon security team.
 
-The presentation covered the constraints that existed in 2006 and the design decisions that now allow AWS to authenticate clients at scale. He then walked through how IAM has changed over the years.
+The presentation covered the constraints that existed in 2006 and the design decisions that now allow AWS to authenticate clients at scale. He then walked through how their authentication requirements have changed over the years.
 
 You can watch the video on YouTube here: [https://www.youtube.com/watch?v=tPr1AgGkvc4](https://www.youtube.com/watch?v=tPr1AgGkvc4)
 
