@@ -9,14 +9,14 @@ My name is Kiran Thomas
 mainSections = []
 
 [[socialIcons]]
-icon = "fab fa-linkedin"
-title = "Linkedin"
-url = "https://www.linkedin.com/in/kiranjthomas/"
-
-[[socialIcons]]
 icon = "fab fa-github"
 title = "Github"
 url = "https://github.com/kiranjthomas"
+
+[[socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/kiranjthomas/"
 
 [[socialIcons]]
 icon = "fas fa-envelope"
