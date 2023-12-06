@@ -37,5 +37,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           source: "public/*"
-          target: "/home/kiran/kiranjthomas/edge/build/www/personal"
+          target: ${{ secrets.SCP_TARGET_DIRECTORY }}
           strip_components: 1
