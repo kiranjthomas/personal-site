@@ -93,7 +93,7 @@ Here's how ARS works with an AWS service at a high level
 ![iam-auth-how-ars-works](/images/iam-auth-how-ars-works.png)
 
 1. Alice creates and signs an API call for S3 to create a bucket
-    1. signing is automatically done by AWS SDKs (see [https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html))
+    1. [signing](#signed-aws-api-request) is automatically done by AWS SDKs
 2. Alice sends request to S3
 3. S3 calls ARS to verify API request
 4. ARS validates the request signature and tells S3 the request is ok  
@@ -195,7 +195,7 @@ It is a long term key that is valid until explicitly revoked.
 >
 > Asymmetric encryption, also known as public key encryption, uses a public key-private key pairing: data encrypted with the public key can only be decrypted with the private key.
 
-source - [https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/](https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption)
+source - [Cloudflare - What is asymmetric encryption?](https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption)
 
 ### Symmetric Encryption
 
@@ -203,12 +203,12 @@ source - [https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/
 >
 > For symmetric encryption to work, the two or more communicating parties must know what the key is; for it to remain secure, no third party should be able to guess or steal the key.
 
-source - [https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/](https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/)
+source - [Cloudflare - What is asymmetric encryption?](https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/)
 
 ### Signed AWS API Request
 
 > To calculate a signature, you first need a string to sign. You then calculate a HMAC-SHA256 hash of the string to sign by using a signing key. The following diagram illustrates the process, including the various components of the string that you create for signing.
 
-source - [https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html)
+source - [AWS - create signed request](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html)
 
 ![iam-auth-generate-signature](/images/iam-auth-generate-signature.png)

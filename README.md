@@ -8,6 +8,12 @@ This site is built using [Hugo].
 
 The Hugo theme that is used for the site is [anatole].
 
+#### Bugs
+
+Long text strings in markdown files will cause the menu bar to disappear in mobile. These long text strings will cause text to overflow.
+
+One example is including a long raw hyperlink. To get around this, create [markdown links](https://www.codecademy.com/resources/docs/markdown/links).
+
 ### Development
 
 #### Run Locally
