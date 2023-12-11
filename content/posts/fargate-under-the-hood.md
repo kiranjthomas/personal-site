@@ -146,9 +146,9 @@ Did you know that security groups are associated with network interfaces? I thou
 
 The following tidbits are true as of platform version 1.4.0
 
-### Containerd replaced Docker as the container runtime
+### Fargate no longer uses Docker Engine
 
-AWS replaced Docker Enginer with ContainerD as the execution engine.
+Docker Engine has a lot of features that Fargate provides natively. They are instead just using containerd as the execution engine.
 
 [source](https://aws.amazon.com/blogs/containers/aws-fargate-launches-platform-version-1-4/)
 
