@@ -36,6 +36,12 @@ Think of these as control plane events. That is, updates that are performed on a
 
 For more information, see [cloudtrail-concepts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-management-events)
 
+### Data Events
+
+Think of these as data plane events. Specifically, updates that are performed in a resource (e.g. DynamoDB PutItem).
+
+The following link has a table of all the types of data events that are supported in CloudTrail: <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html#cloudtrail-concepts-data-events>
+
 ### Insights Events
 
 I'm not as familiar with these so I'll provide a direct quote from the documentation.
