@@ -8,6 +8,12 @@ This site is built using [Hugo].
 
 The Hugo theme that is used for the site is [anatole].
 
+#### Submodules
+
+The theme is installed via a submodule.
+
+To get the latest version of the theme, run `git submodule update --recursive --remote`
+
 #### Bugs
 
 Long text strings in markdown files will cause the menu bar to disappear in mobile. These long text strings will cause text to overflow.
