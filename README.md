@@ -38,7 +38,7 @@ When you are ready to publish the post, remember to update the draft status
 ---
 title: "What is the Difference Between a Process and a Thread"
 date: 2023-01-12T10:56:57-06:00
-draft: false <----update this to true
+draft: true <---- update this to false
 ---
 ```
 
