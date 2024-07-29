@@ -1,5 +1,5 @@
 ---
-title: "How Do Generative Pre-trained Transformer (GPTs) Work Under the Hood?"
+title: "How Do Generative Pre-trained Transformers (GPTs) Work Under the Hood?"
 date: 2024-06-06T09:50:46-05:00
 draft: false
 ---
