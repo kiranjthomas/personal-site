@@ -1,5 +1,5 @@
 ---
-title: "How to use the Terraform AWS Provider's Defined Functions?"
+title: "How to use the Terraform AWS Provider's Defined Functions"
 date: 2024-04-12T15:20:23-05:00
 draft: false
 ---
