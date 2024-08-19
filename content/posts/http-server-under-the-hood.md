@@ -1,5 +1,5 @@
 ---
-title: "Understanding How a HTTP Web Server Works Under the Hood"
+title: "Web Servers Under the Hood"
 date: 2024-08-19T14:43:02-05:00
 draft: false
 ---
