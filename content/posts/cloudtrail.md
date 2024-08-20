@@ -19,7 +19,7 @@ This can be useful in situations when  service `foo` depends on some infrastruct
 The first step in understanding CloudTrail is what it considers an event. An event in CloudTrail is
 
 > ...is the record of an activity in an AWS account.
->  
+>
 > CloudTrail events provide a history of both API and non-API account activity made through the AWS Management Console, AWS SDKs, command line tools, and other AWS services.
 
 Events can be categorized into three buckets.

@@ -14,7 +14,7 @@ You can watch the video on YouTube here: [https://www.youtube.com/watch?v=tPr1Ag
 
 ## Overview
 
-This presentation focused on the design requirements that lead to the cryptographic protocol designed for authentication via AWS IAM.
+This presentation focused on the cryptographic protocol design requirements for authentication via AWS IAM.
 
 Authentication means the principal making the request actually is who they say they are. Authorization focuses on what the principal or user is allowed to do.
 
