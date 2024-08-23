@@ -8,7 +8,7 @@ Terraform announced the general availability of provider-defined functions for A
 
 This post will provide examples of Terraform's existing built-in functions and why Terraform started to allow provider specific functions.
 
-The post borrows heavily from https://www.hashicorp.com/blog/terraform-1-8-adds-provider-functions-for-aws-google-cloud-and-kubernetes
+The post borrows heavily from <https://www.hashicorp.com/blog/terraform-1-8-adds-provider-functions-for-aws-google-cloud-and-kubernetes>
 
 {{< toc >}}
 
