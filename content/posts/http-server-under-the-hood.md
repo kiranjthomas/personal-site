@@ -4,11 +4,13 @@ date: 2024-08-19T14:43:02-05:00
 draft: false
 ---
 
-I wanted to explore how a TCP socket server and an HTTP web server work under the hood by dissecting a simple Rust program. This program listens for incoming TCP connections on a specified address and port, processes HTTP requests, and sends HTTP responses back to the client.
+I wanted to explore how a TCP socket server and an HTTP web server work under the hood by dissecting a simple Rust program. Web servers are fundamental to web development and I realized that I have taken them for granted. I wrote this post to make sure that I could teach how a HTTP request gets processed by a run of the mill web server. I want to be confident in knowing that I could explain this to a junior developer!
 
 {{< toc >}}
 
 ## The Code
+
+This program listens for incoming TCP connections on a specified address and port, processes HTTP requests, and sends HTTP responses back to the client.
 
 ```rust
 use std::io::{BufRead, Write};
@@ -44,7 +46,7 @@ fn main() {
 let listener = TcpListener::bind("127.0.0.1:9999").unwrap();
 ```
 
-The first step is to create a `TcpListener` bound to the address 127.0.0.1 on port 9999. The `TcpListener::bind` function is used to bind to the specified address and port, and it returns a Result that is either a `TcpListener` or an `io::Error`.
+The first step is to create a `TcpListener` bound to the address 127.0.0.1 on port 9999. The `TcpListener::bind` function is used to bind to the specified address and port, and it returns a `Result` that is either a `TcpListener` or an `io::Error`.
 
 ### Handling Incoming Connections
 
@@ -52,7 +54,7 @@ The first step is to create a `TcpListener` bound to the address 127.0.0.1 on po
 for mut stream in listener.incoming().flatten() {
 ```
 
-The listener.incoming() method creates an iterator over incoming TCP connections. Each item yielded by this iterator is a `Result<TcpStream, io::Error>`, where `TcpStream` represents a connection and `io::Error` represents a potential error.
+The `listener.incoming()` method creates an iterator over incoming TCP connections. Each item yielded by this iterator is a `Result<TcpStream, io::Error>`, where `TcpStream` represents a connection and `io::Error` represents a potential error.
 
 ### Reading HTTP Requests
 
@@ -71,13 +73,13 @@ loop {
 }
 ```
 
-For each incoming connection, I create a `BufReader` around the `TcpStream` to facilitate reading from the stream efficiently. The loop reads lines from the buffered reader into a mutable string l. The `BufReader` provides buffering, which can significantly improve the performance of read operations by reducing the number of system calls. Instead of reading directly from the TcpStream, which can be slow due to frequent I/O operations, `BufReader` reads larger chunks of data at once and stores them in an internal buffer. Subsequent reads can then be performed on this buffer, which is much faster.
+For each incoming connection, I created a `BufReader` around the `TcpStream` to facilitate reading from the stream efficiently. The loop reads lines from the buffered reader into a mutable `string l`. The `BufReader` provides buffering, which can significantly improve the performance of read operations by reducing the number of system calls. Instead of reading directly from the `TcpStream`, which can be slow due to frequent I/O operations, `BufReader` reads larger chunks of data at once and stores them in an internal buffer. Subsequent reads can then be performed on this buffer, which is much faster.
 
-HTTP messages contain [a blank line](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) indicating that all meta-information for the request has been sent. I check for this condition using if l.trim().is_empty(), and if it is true, I break out of the loop. Each line read from the request is printed to the standard output.
+HTTP messages contain [a blank line](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) indicating that all meta-information for the request has been sent. I checked for this condition using if `l.trim().is_empty()`, and if it is true, I break out of the loop.
 
 ### Sending HTTP Responses
 
-After reading the HTTP request, I send a simple HTTP response back to the client. The `write_all` method writes the byte string `b"HTTP/1.1 200 OK\r\n\r\nHello!"` to the `TcpStream`. This byte string represents a basic HTTP response with the status 200 OK and the body "Hello!".
+After reading the HTTP request, a simple HTTP response is sent back to the client. The `write_all` method writes the byte string `b"HTTP/1.1 200 OK\r\n\r\nHello!"` to the `TcpStream`. This byte string represents a basic HTTP response with the status 200 OK and the body `"Hello!"`.
 
 ### How It All Works Together
 
@@ -99,4 +101,6 @@ Hello!%
 
 ## Conclusion
 
-This Rust program demonstrates the basic functionality of a TCP socket server and an HTTP web server. It sets up a TCP listener, handles incoming connections, reads HTTP requests, and sends HTTP responses. While this example is simple, it provides a foundational understanding of how TCP and HTTP servers operate under the hood. By building on this foundation, you can create more complex and feature-rich servers for various applications.
+This Rust program demonstrates the basic functionality of a TCP socket server and an HTTP web server. It sets up a TCP listener, handles incoming connections, reads HTTP requests, and sends HTTP responses.
+
+While this example is simple, it provides a foundational understanding of how TCP and HTTP servers operate under the hood. By building on this foundation, you can create more complex and feature-rich servers for various applications.
