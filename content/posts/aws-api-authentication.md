@@ -191,7 +191,7 @@ It is a long term key that is valid until explicitly revoked.
 
 ### Asymmetric Encryption
 
-> As the name implies, asymmetric encryption is different on each side; the sender and the recipient use two differen keys.  
+> As the name implies, asymmetric encryption is different on each side; the sender and the recipient use two different keys.
 >
 > Asymmetric encryption, also known as public key encryption, uses a public key-private key pairing: data encrypted with the public key can only be decrypted with the private key.
 
