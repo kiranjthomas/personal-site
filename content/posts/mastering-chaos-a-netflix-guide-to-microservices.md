@@ -24,7 +24,7 @@ Martin Fowler
 
 ### Microservice architectures are complex and organic
 
-* Health depends on discipline and chaos.
+* Health depends on discipline and chaos
 * The Microservice definition has evolved over time
 
 #### Separation of Concerns
@@ -100,9 +100,10 @@ Josh claims that Netflix got persistence right from the beginning. They got it r
 ##### CAP Theorem
 
 In the presence of a network partition, you must choose two of the following three guidelines
-Consistency - Every read receives the most recent write or an error
-Availability - Every request receives a (non-error) response, without the guarantee that it contains the most recent write
-Partition Tolerance - The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes
+
+* Consistency - Every read receives the most recent write or an error
+* Availability - Every request receives a (non-error) response, without the guarantee that it contains the most recent write
+* Partition Tolerance - The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes
 
 ##### Netflix Embraced Eventual Consistency
 
