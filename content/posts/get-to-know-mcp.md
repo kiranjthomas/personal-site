@@ -1,8 +1,7 @@
 ---
 title: "Get to Know MCP"
 date: 2025-07-10T10:05:57-06:00
-draft: true
-author: "Kiran Thomas"
+draft: false
 ---
 
 Anthropic originally created the Model Context Protocol (MCP) to add context to Claude Desktop. MCP's problem statement was to solve copying pasting between your MCP Host (e.g. Claude Desktop) and a disparate data sources and tools. MCP was open sourced on November 2024.
