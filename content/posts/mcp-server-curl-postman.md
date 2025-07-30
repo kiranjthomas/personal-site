@@ -1,29 +1,12 @@
 ---
 title: "How to use curl or Postman to Interact with a MCP Server"
-date: 2025-07-30T14:32:37-06:00
+date: 2025-07-29T14:32:37-06:00
 draft: false
 ---
 
 I wanted to understand how the data and transport layers work in MCP. To do that, I mimicked what a MCP client would do by using curl and then Postman to connect to a MCP server. This allowed me to step through the lifecycle of a connection and get a peek into how messages are exchanged via JSON-RPC.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [curl](#curl)
-  - [Send Initialize Request](#send-initialize-request)
-  - [Extract the Session ID](#extract-the-session-id)
-  - [Send Initialized Notification](#send-initialized-notification)
-  - [Operational Communication](#operational-communication)
-    - [List Available Tools](#list-available-tools)
-    - [Call a Tool](#call-a-tool)
-  - [Session Management](#session-management)
-- [Postman](#postman)
-  - [Click New](#click-new)
-  - [Select MCP](#select-mcp)
-  - [Select Transport](#select-transport)
-  - [Click Run](#click-run)
-  - [See what Tools are Available](#see-what-tools-are-available)
-  - [See the actual JSON-RPC message that was sent when executing a tool](#see-the-actual-json-rpc-message-that-was-sent-when-executing-a-tool)
+{{< toc >}}
 
 ## Overview
 
