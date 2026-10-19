@@ -46,14 +46,20 @@ draft: true <---- update this to false
 
 ## Deployment
 
-Commits to main trigger a [Github Actions] workflow that
+Commits to main trigger the only [Github Actions] workflow, [Deploy Hugo site to Pages] (`.github/workflows/actions.yaml`), which
 
-* `hugo --minify`
-* [lint markdown]
-* SCP static assets to workload in the cloud
+* lints markdown with [markdownlint-cli2]
+* builds with `hugo --minify`
+* uploads the `./public` artifact
+* deploys with `actions/deploy-pages` to [GitHub Pages]
+
+The live site [kiranjthomas.com] is served by GitHub.com.
 
 [hugo]: https://gohugo.io/
 [anatole]: https://github.com/lxndrblz/anatole/wiki/1%EF%B8%8F%E2%83%A3-Essential-Steps
 [github actions]: https://docs.github.com/en/actions
 [commands]: https://gohugo.io/commands/hugo/
-[lint markdown]: https://github.com/DavidAnson/markdownlint/
+[deploy hugo site to pages]: .github/workflows/actions.yaml
+[markdownlint-cli2]: https://github.com/DavidAnson/markdownlint-cli2
+[github pages]: https://docs.github.com/en/pages
+[kiranjthomas.com]: https://kiranjthomas.com
